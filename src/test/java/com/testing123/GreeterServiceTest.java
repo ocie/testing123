@@ -60,6 +60,11 @@ public class GreeterServiceTest {
         String result = greeterService.makeGreeting("Fred");
 
         Assertions.assertThat(result).isEqualTo("Hello, Fred :)");
+        // we can print out the interactions with the mock
+        System.out.println("interactions: ");
+        for (var interaction: Mockito.mockingDetails(mockStringService).getInvocations()) {
+            System.out.println(interaction);
+        }
     }
 
     @Test
