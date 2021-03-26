@@ -1,4 +1,0 @@
-com/thirdpartylib/StringService.java
- com.thirdpartylib.StringService
-com/testing123/GreeterService.java
- com.testing123.GreeterService
